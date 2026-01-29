@@ -1,0 +1,40 @@
+
+# Swapping using temporary variable
+
+# Taking input from the user
+a = int(input("Enter the number:"))
+b = int(input("Enter the number:"))
+
+# Storing the value of 'a' in a temporary variable
+temp = a
+# Assigning the value of 'b' to 'a'
+a = b
+# Assigning the value stored in temp to 'b'
+b = temp
+# Printing the result after swapping
+print("After swapping:")
+print("a =", a)
+print("b =", b)
+
+# Sample output:
+# Taking input from the user
+a = int(input("Enter the number:"))
+b = int(input("Enter the number:"))
+
+# Storing the value of 'a' in a temporary variable
+temp = a
+# Assigning the value of 'b' to 'a'
+a = b
+# Assigning the value stored in temp to 'b'
+b = temp
+# Printing the result after swapping
+print("After swapping:")
+print("a =", a)
+print("b =", b)
+
+# Sample output:
+# Enter the first number: 10
+# Enter the second number: 20
+# After swapping:
+# a = 20
+# b = 10

@@ -1,0 +1,18 @@
+# Program to reverse a string
+
+# Taking the input string from the user
+text = input("Enter a string: ")
+
+# Variable to store the reversed string
+rev = ""
+
+# Loop through the string from the last index to the first index
+for i in range(len(text) - 1, -1, -1):
+    rev = rev + text[i]
+
+# Display the reversed string
+print("Reversed string =", rev)
+
+#Sample output
+#Enter a string: python
+#Reversed string = nohtyp

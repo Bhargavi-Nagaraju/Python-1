@@ -1,0 +1,22 @@
+# Program to check whether a number is prime or not
+# A prime number is a number greater than 1 that has only two factors: 1 and itself
+
+num = int(input("Enter a number: "))
+
+# Numbers less than or equal to 1 are not prime
+if num <= 1:
+    print("Not a prime")
+else:
+    # Check divisibility from 2 to num-1
+    for i in range(2, num):
+        if num % i == 0:
+            # If divisible by any number, it is not prime
+            print("Not a prime")
+            break
+    else:
+        # If loop completes without break, number is prime
+        print("Prime number")
+
+# Sample output
+# Enter a number: 7
+# Prime number
