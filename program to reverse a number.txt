@@ -1,0 +1,23 @@
+# Take input from the user and convert it to integer
+num = int(input("Enter a number: "))
+
+# Variable to store the reversed number
+reverse = 0
+
+# Loop runs until all digits are processed
+while num > 0:
+    # Get the last digit of the number
+    digit = num % 10
+
+    # Add the digit to the reversed number
+    reverse = reverse * 10 + digit
+
+    # Remove the last digit from the original number
+    num //= 10
+
+# Display the reversed number
+print("Reversed number:", reverse)
+
+#sample output
+#Enter a number: 1234
+#Reversed number: 4321
