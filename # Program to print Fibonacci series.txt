@@ -1,0 +1,22 @@
+# Program to print Fibonacci series for n terms
+
+# Take input from the user (number of terms)
+n = int(input("Enter a number: "))
+
+# Initialize the first two Fibonacci numbers
+a, b = 0, 1
+
+# Loop runs n times to generate n Fibonacci numbers
+for i in range(n):
+
+    # Print the current Fibonacci number on the same line
+    print(a, end=" ")
+
+    # Update values:
+    # 'a' becomes the next number
+    # 'b' becomes the sum of the previous two numbers
+    a, b = b, a + b
+
+#sample output
+#Enter a number: 6
+#0 1 1 2 3 5
