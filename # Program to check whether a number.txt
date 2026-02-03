@@ -1,0 +1,35 @@
+# Program to check whether a number is an Armstrong number
+
+# Take input from the user
+num = int(input("Enter a number: "))
+
+# Store the original number for comparison later
+temp = num
+
+# Count the number of digits in the number
+count = len(str(num))
+
+# Initialize sum to store the total of digit powers
+sum = 0
+
+# Loop to process each digit of the number
+while temp > 0:
+    
+    # Extract the last digit of the number
+    digit = temp % 10
+    
+    # Add digit raised to the power of total digits to sum
+    sum = sum + (digit ** count)
+    
+    # Remove the last digit from the number
+    temp = temp // 10
+
+# Compare the calculated sum with the original number
+if sum == num:
+    print("Armstrong number")
+else:
+    print("Not an Armstrong number")
+
+#sample output
+#Enter a number:153
+#Armstrong number
