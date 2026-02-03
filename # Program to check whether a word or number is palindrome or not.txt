@@ -1,0 +1,42 @@
+# Program to check whether a word or number is a palindrome
+
+# Take input from the user
+text = input("Enter a word or a number: ")
+
+# Convert input to string (for numbers) and to lowercase (for case-insensitive check)
+text = str(text).lower()
+
+# Initialize pointer to start of the string
+start = 0
+
+# Initialize pointer to end of the string
+end = len(text) - 1
+
+# Assume the input is a palindrome initially
+is_palindrome = True
+
+# Loop to compare characters from both ends
+while start < end:
+
+    # If characters at start and end are not equal
+    if text[start] != text[end]:
+        # Mark as not a palindrome
+        is_palindrome = False
+        # Exit the loop since one mismatch is enough
+        break
+
+    # Move start pointer one step to the right
+    start += 1
+
+    # Move end pointer one step to the left
+    end -= 1
+
+# Check the final result and print output
+if is_palindrome:
+    print("palindrome")
+else:
+    print("not palindrome")
+
+
+#Enter a word or a number: madam
+#palindrome
